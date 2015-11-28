@@ -20,4 +20,4 @@ Asip is a protocol to control an Arduino board from a computer. The protocol is 
 ### Additional help ###
 
 * Don't be afraid of contacting us. We'll try to reply as soon as possible. Feel free to open issues.
-* Do you want to contribute? Please get in touch :-)!
+* Do you want to contribute? Please get in touch :-)! We need help for a number of things, starting from documentation to the development of other clients, additional services, examples, etc.
