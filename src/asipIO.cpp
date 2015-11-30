@@ -159,7 +159,7 @@ void asipIOClass::begin( )
     verbose_printf(F("Default PinMode\n"));
    // set all pins capable of analog input to ANALOG_MODE 
     for( byte pin = 0; pin < TOTAL_PINCOUNT; pin++) {     
-      if (IS_PIN_ANALOG(pin)) {
+      if ( asip.getPinMode(pin) != RESERVED_MODE && IS_PIN_ANALOG(pin)) {
         if (IS_PIN_DIGITAL(pin)) {
           pinMode(PIN_TO_DIGITAL(pin), INPUT_MODE);    // disable output driver
           digitalWrite(PIN_TO_DIGITAL(pin), LOW); // disable internal pull-ups
